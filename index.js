@@ -5,7 +5,7 @@ function iterativeOddSumTo(number) {
     let sum = 0;
 
     for (let i = 1; i <= number; i++) {
-        if (i % 2 !== 0) {
+        if (i % 2) {
             sum +=i
         }
     }
@@ -22,7 +22,7 @@ function iterativeOddSumTo(number) {
 // function iterativeOddSumTo(number) {
 //     if (number <= 0) {
 //         return 0;
-//     } else if (number % 2 !== 0) {
+//     } if (number % 2) {
 //         return number + iterativeOddSumTo(number - 1);
 //     } else {
 //         return iterativeOddSumTo(number - 1);
